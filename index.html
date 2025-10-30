@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss"></style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --my-font: "Montserrat";
+        --color-my-dark-grey: #121212;
+        --color-my-light-grey: #a2a0a5;
+        --color-my-dark-purple: #3b0e3e;
+        --color-my-light-purple: #734876;
+        --color-my-blue: #25272b;
+      }
+      @layer base {
+        body {
+          @apply font-(family-name:--my-font);
+        }
+      }
+      @layer components {
+        .test {
+          @apply rounded-lg;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Anna -->
