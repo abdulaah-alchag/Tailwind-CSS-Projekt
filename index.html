@@ -92,9 +92,9 @@
     <main>
       <section>
         <div
-          class="flex flex-col md:flex-row gap-y-10 md:gap-x-10 w-full items-center mx-auto xl:max-w-[75%]"
+          class="flex flex-col md:flex-row gap-y-10 md:gap-x-10 w-full items-center mx-auto xl:max-w-[90%]"
         >
-          <div class="w-full m-w-1/2 order-2 md:order-1">
+          <div class="w-full md:max-w-[45%] order-2 md:order-1">
             <h1
               class="tracking-widest text-3xl md:text-4xl lg:text-5xl font-bold w-full xl: max-w-[95%]"
             >
@@ -112,7 +112,7 @@
               CTA-Button
             </button>
           </div>
-          <div class="w-full m-w-1/2 order-1 md:order-2">
+          <div class="w-full md:max-w-[55%] order-1 md:order-2">
             <figure class="relative">
               <img
                 src="https://cdn.swp.de/2024/04/02/33ea1ec6-3fac-4794-afeb-19c2d3e7cc4e.jpeg?width=1376&format=webp&token=53a6fe90e789b4f643cb7aec55c9453b214fa5cdbfc77bb129c55ce5d9072384"
@@ -162,14 +162,51 @@
       <!-- Border top 3px #0000 -->
       <section class="block w-[110%] -ml-[5%] -mr-[-5%] before:content-['']">
         <div
-          class="relative flex items-center justify-start h-[calc(100vw_/1.777)] bg-[url(./img/bg.png)] bg-cover bg-no-repeat bg-center"
+          class="relative flex items-center justify-start bg-[url(./assets/banner.jpg)] bg-cover bg-no-repeat bg-center md:h-[calc(100vw_/1.777)]"
         >
-          <strong class="text-my-dark-purple">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-            aliquam, distinctio quam eos, laudantium neque exercitationem
-            possimus hic, deserunt veritatis soluta eum adipisci esse id rem
-            voluptate. Ipsum, adipisci facere.
-          </strong>
+          <div class="max-w-1/2 ml-2 py-4 md:ml-[5%] lg:ml-[10%] lg:max-w-1/3">
+            <h3
+              class="tracking-widest text-2xl font-bold md:text-3xl lg:text-4xl"
+            >
+              Favoriten
+            </h3>
+            <strong
+              class="block text-my-dark-purple mt-4 leading-6 lg:leading-8"
+            >
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              aliquam, distinctio quam eos, laudantium neque exercitationem
+              possimus hic, deserunt veritatis soluta eum adipisci esse id rem
+              voluptate.
+            </strong>
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="group flex items-center gap-2 bg-my-dark-purple text-xs px-4 py-2"
+              >
+                <i
+                  class="icon text-white hover:text-my-light-purple group-hover:text-black"
+                  >&#xe804;</i
+                >
+                <div class="group-hover:text-black">
+                  <span>Download on the</span>
+                  <b class="block">App Store</b>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="group flex items-center gap-2 bg-my-dark-purple text-xs px-4 py-2"
+              >
+                <i
+                  class="icon text-white hover:text-my-light-purple group-hover:text-black"
+                  >&#xf179;</i
+                >
+                <div class="group-hover:text-black">
+                  <span>Get it on</span>
+                  <b class="block">Google Play</b>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Abood -->
