@@ -47,7 +47,6 @@
         body {
           @apply font-(family-name:--my-font) bg-my-blue text-my-light-grey;
         }
-        header,
         main,
         footer {
           @apply max-w-[90%] mx-auto;
@@ -73,16 +72,22 @@
   </head>
   <body>
     <!-- Anna -->
-    <header>
-      <nav>
-        <div>Logo</div>
-        <ul>
-          <li><a href="#1">Menu1</a></li>
-          <li><a href="#2">Menu2</a></li>
-          <li><a href="#3">Menu3</a></li>
+    <header
+      class="flex gap-x-4 items-center bg-my-light-grey text-my-blue px-[5%] py-4 bg-linear-to-t from-my-light-purple to-my-dark-purple"
+    >
+      <div class="text-white hover:font-bold">Logo</div>
+      <nav class="w-full">
+        <ul class="flex gap-x-4 items-center">
+          <li><a href="#1" class="text-white hover:font-bold">Menu1</a></li>
+          <li><a href="#2" class="text-white hover:font-bold">Menu2</a></li>
+          <li><a href="#3" class="text-white hover:font-bold">Menu3</a></li>
         </ul>
-        <div><button>Warenkorb</button></div>
       </nav>
+      <div class="flex justify-end">
+        <button class="flex gap-x-4 items-center">
+          <i class="icon text-white">&#xe805;</i>
+        </button>
+      </div>
     </header>
     <main>
       <section>
