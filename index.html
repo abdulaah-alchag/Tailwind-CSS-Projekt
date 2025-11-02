@@ -73,14 +73,29 @@
   <body>
     <!-- Anna -->
     <header
-      class="flex gap-x-4 items-center bg-my-light-grey text-my-blue px-[5%] py-4 bg-linear-to-t from-my-light-purple to-my-dark-purple"
+      class="sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 flex gap-x-4 items-center text-my-blue px-[5%] py-4"
     >
-      <div class="text-white hover:font-bold">Logo</div>
+      <div class="text-white hover:font-bold">
+        <figure>
+          <img
+            src="./assets/logo.png"
+            width="50"
+            height="50"
+            alt="Lieferservice"
+          />
+        </figure>
+      </div>
       <nav class="w-full">
         <ul class="flex gap-x-4 items-center">
-          <li><a href="#1" class="text-white hover:font-bold">Menu1</a></li>
-          <li><a href="#2" class="text-white hover:font-bold">Menu2</a></li>
-          <li><a href="#3" class="text-white hover:font-bold">Menu3</a></li>
+          <li>
+            <a href="#download" class="text-white hover:font-bold">Download</a>
+          </li>
+          <li><a href="#menu" class="text-white hover:font-bold">Menü</a></li>
+          <li>
+            <a href="#reviews" class="text-white hover:font-bold"
+              >Bewertungen</a
+            >
+          </li>
         </ul>
       </nav>
       <div class="flex justify-end">
@@ -94,25 +109,26 @@
         <div
           class="flex flex-col md:flex-row gap-y-10 md:gap-x-10 w-full items-center mx-auto xl:max-w-[90%]"
         >
-          <div class="w-full md:max-w-[45%] order-2 md:order-1">
+          <div class="w-full md:max-w-[40%] order-2 md:order-1">
             <h1
               class="tracking-widest text-3xl md:text-4xl lg:text-5xl font-bold w-full xl: max-w-[95%]"
             >
-              Überschrift zum Projekt
+              Frisch. Schnell. Direkt zu dir.
             </h1>
             <p class="py-4 w-full xl: max-w-[95%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              consequatur voluptas mollitia reprehenderit non fuga officiis
-              excepturi molestiae soluta delectus atque amet eius quo odit
-              laboriosam rem fugiat, ea at.
+              Bestelle dein Lieblingsessen ganz einfach online – frisch
+              zubereitet, liebevoll verpackt und in kürzester Zeit bei dir zu
+              Hause. Ob Pizza, Pasta oder Salat – wir bringen den Genuss direkt
+              vor deine Tür!
             </p>
-            <button
+            <a
+              href="#menu"
               class="cursor-pointer rounded-lg text-black bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
             >
-              CTA-Button
-            </button>
+              Jetzt bestellen
+            </a>
           </div>
-          <div class="w-full md:max-w-[55%] order-1 md:order-2">
+          <div class="w-full md:max-w-[60%] order-1 md:order-2">
             <figure class="relative">
               <img
                 src="https://cdn.swp.de/2024/04/02/33ea1ec6-3fac-4794-afeb-19c2d3e7cc4e.jpeg?width=1376&format=webp&token=53a6fe90e789b4f643cb7aec55c9453b214fa5cdbfc77bb129c55ce5d9072384"
@@ -134,33 +150,41 @@
         <h2
           class="tracking-widest text-2xl text-center font-bold md:text-3xl lg:text-4xl"
         >
-          h2-Überschrift
+          Unser Versprechen
         </h2>
         <div
-          class="flex flex-col md:flex-row items-center justify-center mx-auto xl:max-w-[75%]"
+          class="flex flex-col gap-4 md:flex-row items-center justify-center mx-auto xl:max-w-[75%]"
         >
           <div class="flex flex-col items-center justify-start w-full m-w-1/3">
             <i class="icon !text-[500%] text-my-light-purple">&#xe806;</i>
             <p class="text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <b class="block">Frisch</b>
+              Wir verwenden nur hochwertige, frische Zutaten – jedes Gericht
+              wird erst nach deiner Bestellung zubereitet.
             </p>
           </div>
           <div class="flex flex-col items-center justify-start w-full m-w-1/3">
             <i class="icon !text-[500%] text-my-light-purple">&#xe807;</i>
             <p class="text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <b class="block">Schnell</b>
+              Dank unseres optimierten Liefernetzwerks ist dein Essen in wenigen
+              Minuten heiß und lecker bei dir.
             </p>
           </div>
           <div class="flex flex-col items-center justify-start w-full m-w-1/3">
             <i class="icon !text-[500%] text-my-light-purple">&#xe809;</i>
             <p class="text-center">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              <b class="block">Direkt</b>Direkt Ohne Umwege – wir liefern direkt
+              von unserer Küche zu deiner Tür, sicher und zuverlässig.
             </p>
           </div>
         </div>
       </section>
       <!-- Border top 3px #0000 -->
-      <section class="block w-[110%] -ml-[5%] -mr-[-5%] before:content-['']">
+      <section
+        id="download"
+        class="block w-[110%] -ml-[5%] -mr-[-5%] before:content-['']"
+      >
         <div
           class="relative flex items-center justify-start bg-[url(./assets/banner.jpg)] bg-cover bg-no-repeat bg-center md:h-[calc(100vw_/1.777)]"
         >
@@ -168,17 +192,15 @@
             <h3
               class="tracking-widest text-2xl font-bold md:text-3xl lg:text-4xl"
             >
-              Favoriten
+              Unsere App
             </h3>
             <strong
               class="block text-my-dark-purple mt-4 leading-6 lg:leading-8"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              aliquam, distinctio quam eos, laudantium neque exercitationem
-              possimus hic, deserunt veritatis soluta eum adipisci esse id rem
-              voluptate.
+              Lade jetzt unsere App herunter und genieße dein Lieblingsessen mit
+              nur wenigen Klicks – wo immer du bist.
             </strong>
-            <div class="flex gap-4">
+            <div class="flex gap-4 mt-5">
               <a
                 href="#"
                 class="group flex items-center gap-2 bg-my-dark-purple text-xs px-4 py-2"
@@ -211,7 +233,7 @@
       </section>
       <!-- Abood -->
       <!-- Border top 3px #0000 -->
-      <section>
+      <section id="menu">
         <h3
           class="tracking-widest text-2xl text-center font-bold md:text-3xl lg:text-4xl"
         >
@@ -331,7 +353,7 @@
         </div>
       </section>
       <!-- Border top 3px #0000 -->
-      <section class="before:content-['']">
+      <section id="reviews" class="before:content-['']">
         <h3
           class="tracking-widest text-2xl text-center font-bold md:text-3xl lg:text-4xl"
         >
