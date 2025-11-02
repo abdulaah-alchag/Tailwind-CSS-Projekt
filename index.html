@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lieferservice</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -134,7 +134,7 @@
                 src="https://cdn.swp.de/2024/04/02/33ea1ec6-3fac-4794-afeb-19c2d3e7cc4e.jpeg?width=1376&format=webp&token=53a6fe90e789b4f643cb7aec55c9453b214fa5cdbfc77bb129c55ce5d9072384"
                 weight="100%"
                 height="auto"
-                alt="Projekt"
+                alt="Lieferservice"
               />
               <figcaption
                 class="block absolute top-0 left-0 bg-white p-1 text-my-blue"
@@ -250,21 +250,26 @@
           <div class="flex flex-col items-center">
             <img
               src="./assets/e934068b-0f37-4a35-9327-df12401704ae.png"
-              alt=""
               class="h-auto rounded-lg max-w-50 md:max-w-60 lg:max-w-75"
+              width=""
+              height=""
+              alt="Margherita Pizza"
             />
             <details class="relative">
               <div
-                class="absolute z-1 -left-[20vw] md:-left-[10vw] lg:-left-[0] flex-col lg:flex-row w-[80vw] md:w-[60vw] lg:w-[40vw] h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
+                class="clickable-div absolute z-1 w-[80vw] left-1/2 -ml-[40vw] md:w-[60vw] md:-ml-[30vw] lg:w-[40vw] lg:-ml-[20vw] flex-col lg:flex-row h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
               >
                 <figure class="w-[70%]">
                   <img
                     src="./assets/e934068b-0f37-4a35-9327-df12401704ae.png"
+                    alt="Margherita Pizza"
+                    width=""
+                    height=""
                   />
                 </figure>
                 <p class="lg:max-w-[30%] text-black">
                   Margherita Pizza – klassische italienische Pizza mit frischem
-                  Basilikum 🌿 (Bildvorschlag: frische Pizza auf Holzbrett)
+                  Basilikum
                   <button
                     type="button"
                     class="mt-2 cursor-pointer rounded-lg text-white bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
@@ -273,23 +278,39 @@
                   </button>
                 </p>
               </div>
-              <summary>Margherita Pizza</summary>
+              <summary class="cursor-pointer">Margherita Pizza</summary>
             </details>
           </div>
           <div class="flex flex-col items-center">
             <img
               src="./assets/4e668f9e-74d8-4e14-8fe0-318c110446cb.png"
               class="h-auto rounded-lg max-w-50 md:max-w-60 lg:max-w-75"
+              width=""
+              height=""
+              alt="Chicken Curry"
             />
-            <details>
-              <figure>
-                <img
-                  src="./assets/4e668f9e-74d8-4e14-8fe0-318c110446cb.png"
-                  alt=""
-                  width=""
-                  height=""
-                />
-              </figure>
+            <details class="relative">
+              <div
+                class="clickable-div absolute z-1 w-[80vw] left-1/2 -ml-[40vw] md:w-[60vw] md:-ml-[30vw] lg:w-[40vw] lg:-ml-[20vw] flex-col lg:flex-row h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
+              >
+                <figure class="w-[70%]">
+                  <img
+                    src="./assets/4e668f9e-74d8-4e14-8fe0-318c110446cb.png"
+                    alt="Chicken Curry"
+                    width=""
+                    height=""
+                  />
+                </figure>
+                <p class="lg:max-w-[30%] text-black">
+                  Chicken Curry – zartes Hähnchen in cremiger Currysoße
+                  <button
+                    type="button"
+                    class="mt-2 cursor-pointer rounded-lg text-white bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
+                  >
+                    Bestellen
+                  </button>
+                </p>
+              </div>
               <summary>Chicken Curry</summary>
             </details>
           </div>
@@ -297,16 +318,32 @@
             <img
               src="./assets/9d1936f8-de25-404f-b3a4-a68adebeb8b7.png"
               class="h-auto rounded-lg max-w-50 md:max-w-60 lg:max-w-75"
+              width=""
+              height=""
+              alt="Veggie Burger"
             />
-            <details>
-              <figure>
-                <img
-                  src="./assets/9d1936f8-de25-404f-b3a4-a68adebeb8b7.png"
-                  alt=""
-                  width=""
-                  height=""
-                />
-              </figure>
+            <details class="relative">
+              <div
+                class="clickable-div absolute z-1 w-[80vw] left-1/2 -ml-[40vw] md:w-[60vw] md:-ml-[30vw] lg:w-[40vw] lg:-ml-[20vw] flex-col lg:flex-row h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
+              >
+                <figure class="w-[70%]">
+                  <img
+                    src="./assets/9d1936f8-de25-404f-b3a4-a68adebeb8b7.png"
+                    alt="Veggie Burger"
+                    width=""
+                    height=""
+                  />
+                </figure>
+                <p class="lg:max-w-[30%] text-black">
+                  Veggie Burger – pflanzlicher Burger mit knackigem Gemüse
+                  <button
+                    type="button"
+                    class="mt-2 cursor-pointer rounded-lg text-white bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
+                  >
+                    Bestellen
+                  </button>
+                </p>
+              </div>
               <summary>Veggie Burger</summary>
             </details>
           </div>
@@ -314,16 +351,32 @@
             <img
               src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc1.png"
               class="h-auto rounded-lg max-w-50 md:max-w-60 lg:max-w-75"
+              width=""
+              height=""
+              alt="Pasta Bolognese"
             />
-            <details>
-              <figure>
-                <img
-                  src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc1.png"
-                  alt=""
-                  width=""
-                  height=""
-                />
-              </figure>
+            <details class="relative">
+              <div
+                class="clickable-div absolute z-1 w-[80vw] left-1/2 -ml-[40vw] md:w-[60vw] md:-ml-[30vw] lg:w-[40vw] lg:-ml-[20vw] flex-col lg:flex-row h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
+              >
+                <figure class="w-[70%]">
+                  <img
+                    src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc1.png"
+                    alt="Pasta Bolognese"
+                    width=""
+                    height=""
+                  />
+                </figure>
+                <p class="lg:max-w-[30%] text-black">
+                  Pasta Bolognese – traditionelle Pasta mit würziger Tomatensoße
+                  <button
+                    type="button"
+                    class="mt-2 cursor-pointer rounded-lg text-white bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
+                  >
+                    Bestellen
+                  </button>
+                </p>
+              </div>
               <summary>Pasta Bolognese</summary>
             </details>
           </div>
@@ -331,16 +384,33 @@
             <img
               src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc3.png"
               class="h-auto rounded-lg max-w-50 md:max-w-60 lg:max-w-75"
+              width=""
+              height=""
+              alt="Caesar Salad"
             />
-            <details>
-              <figure>
-                <img
-                  src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc3.png"
-                  alt=""
-                  width=""
-                  height=""
-                />
-              </figure>
+            <details class="relative">
+              <div
+                class="clickable-div absolute z-1 w-[80vw] left-1/2 -ml-[40vw] md:w-[60vw] md:-ml-[30vw] lg:w-[40vw] lg:-ml-[20vw] flex-col lg:flex-row h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
+              >
+                <figure class="w-[70%]">
+                  <img
+                    src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc3.png"
+                    alt="Caesar Salad"
+                    width=""
+                    height=""
+                  />
+                </figure>
+                <p class="lg:max-w-[30%] text-black">
+                  Caesar Salad – frischer Salat mit Hähnchenstreifen und
+                  Parmesan
+                  <button
+                    type="button"
+                    class="mt-2 cursor-pointer rounded-lg text-white bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
+                  >
+                    Bestellen
+                  </button>
+                </p>
+              </div>
               <summary>Caesar Salad</summary>
             </details>
           </div>
@@ -348,17 +418,33 @@
             <img
               src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc4.png"
               class="h-auto rounded-lg max-w-50 md:max-w-60 lg:max-w-75"
+              width=""
+              height=""
+              alt="Tiramisu"
             />
-            <details>
-              <figure>
-                <img
-                  src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc4.png"
-                  alt=""
-                  width=""
-                  height=""
-                />
-              </figure>
-              <summary>Tiramisur</summary>
+            <details class="relative">
+              <div
+                class="clickable-div absolute z-1 w-[80vw] left-1/2 -ml-[40vw] md:w-[60vw] md:-ml-[30vw] lg:w-[40vw] lg:-ml-[20vw] flex-col lg:flex-row h-auto -top-[200px] bg-[#e46528] flex p-5 gap-4"
+              >
+                <figure class="w-[70%]">
+                  <img
+                    src="./assets/52f7f499-8089-4cd0-a4ba-7dcceb2e11fc4.png"
+                    alt="Tiramisu"
+                    width=""
+                    height=""
+                  />
+                </figure>
+                <p class="lg:max-w-[30%] text-black">
+                  Tiramisu – italienisches Dessert mit Mascarpone und Kakao
+                  <button
+                    type="button"
+                    class="mt-2 cursor-pointer rounded-lg text-white bg-my-light-purple px-4 py-2 hover:text-white hover:bg-my-dark-purple"
+                  >
+                    Bestellen
+                  </button>
+                </p>
+              </div>
+              <summary>Tiramisu</summary>
             </details>
           </div>
         </div>
@@ -521,26 +607,29 @@
         <small class="w-full m-w-1/2">@Copyrights 2025</small>
         <ul class="flex w-full m-w-1/2 gap-x-2 justify-end">
           <li>
-            <a href="https://google.com">
-              <i class="icon icon-facebook-squared hover:text-white"
-                >&#xf308;</i
-              ></a
-            >
+            <a href="#"> <i class="icon hover:text-white">&#xf308;</i></a>
           </li>
           <li>
-            <a href="https://google.com">
-              <i class="icon icon-instagram hover:text-white">&#xf16d;</i></a
-            >
+            <a href="#"> <i class="icon hover:text-white">&#xf16d;</i></a>
           </li>
           <li>
-            <a href="https://google.com"
-              ><i class="icon icon-youtube-play hover:text-white"
-                >&#xf16a;</i
-              ></a
-            >
+            <a href="#"><i class="icon hover:text-white">&#xf16a;</i></a>
           </li>
         </ul>
       </div>
     </footer>
+    <script>
+      // Alle klickbaren divs holen
+      document.querySelectorAll(".clickable-div").forEach((div) => {
+        div.addEventListener("click", (event) => {
+          // Verhindert, dass Klicks auf Buttons das Summary auslösen
+          if (!event.target.closest("button")) {
+            const details = div.closest("details"); // das zugehörige <details>
+            const summary = details.querySelector("summary"); // das passende <summary>
+            summary.click(); // auslösen
+          }
+        });
+      });
+    </script>
   </body>
 </html>
